@@ -1,6 +1,0 @@
-from instabot import Bot
-
-def post_to_instagram():
-    bot = Bot()
-    bot.login(username="stynraey", password="Hollycrapps.1#")
-    bot.upload_video("final_video.mp4", caption="Weird Money Fact #1")

@@ -36,34 +36,34 @@ dbus-update-activation-environment: setting PATH=/home/kali/.local/bin:/usr/loca
 dbus-update-activation-environment: setting GDMSESSION=lightdm-xsession
 dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
 dbus-update-activation-environment: setting _=/usr/bin/dbus-update-activation-environment
-** Message: 14:19:02.076: Failed to fetch _NET_NUMBER_OF_DESKTOPS; assuming 1
-** Message: 14:19:02.076: Failed to get _NET_WORKAREA; using full screen dimensions
-** Message: 14:19:02.076: Failed to fetch _NET_CURRENT_DESKTOP; assuming 0
-** Message: 14:19:02.076: Failed to fetch _NET_CURRENT_DESKTOP; assuming 0
+** Message: 14:27:11.605: Failed to fetch _NET_NUMBER_OF_DESKTOPS; assuming 1
+** Message: 14:27:11.605: Failed to get _NET_WORKAREA; using full screen dimensions
+** Message: 14:27:11.605: Failed to fetch _NET_CURRENT_DESKTOP; assuming 0
+** Message: 14:27:11.605: Failed to fetch _NET_CURRENT_DESKTOP; assuming 0
 /usr/bin/iceauth:  creating new authority file /run/user/1000/ICEauthority
 gpg-agent: a gpg-agent is already running - not starting a new one
-** Message: 14:19:02.462: Failed to fetch _NET_CURRENT_DESKTOP; assuming 0
-** Message: 14:19:02.565: Failed to fetch _NET_CURRENT_DESKTOP; assuming 0
+** Message: 14:27:11.812: Failed to fetch _NET_CURRENT_DESKTOP; assuming 0
+** Message: 14:27:12.015: Failed to fetch _NET_CURRENT_DESKTOP; assuming 0
 
-(xfwm4:1277): xfwm4-WARNING **: 14:19:04.579: Unsupported GL renderer (SVGA3D; build: RELEASE;  LLVM;).
+(xfwm4:1277): xfwm4-WARNING **: 14:27:14.258: Unsupported GL renderer (SVGA3D; build: RELEASE;  LLVM;).
 
-(xfce4-session:1134): xfce4-session-WARNING **: 14:19:05.731: Unable to launch "xcape -e 'Super_L=Control_L|Escape'" (specified by autostart/xcape-super-key-bind.desktop): Failed to execute child process “xcape” (No such file or directory)
-
-(polkit-mate-authentication-agent-1:1339): GLib-CRITICAL **: 14:19:05.952: g_variant_new_string: assertion 'string != NULL' failed
-
-(polkit-mate-authentication-agent-1:1339): polkit-mate-1-WARNING **: 14:19:05.956: Failed to register client: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files
+(xfce4-session:1128): xfce4-session-WARNING **: 14:27:15.262: Unable to launch "xcape -e 'Super_L=Control_L|Escape'" (specified by autostart/xcape-super-key-bind.desktop): Failed to execute child process “xcape” (No such file or directory)
 Failure: No such entity
 /usr/bin/pkcs11-register: option '--skip-chrome' doesn't allow an argument
+
+(polkit-mate-authentication-agent-1:1332): GLib-CRITICAL **: 14:27:15.645: g_variant_new_string: assertion 'string != NULL' failed
+
+(polkit-mate-authentication-agent-1:1332): polkit-mate-1-WARNING **: 14:27:15.646: Failed to register client: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files
 Cannot register authentication agent: GDBus.Error:org.freedesktop.PolicyKit1.Error.Failed: An authentication agent already exists for the given subject
 
-(xfce4-screensaver:1371): libxfce4ui-WARNING **: 14:19:07.232: org.freedesktop.ScreenSaver running but unused: using org.xfce.ScreenSaver instead
+(xfce4-screensaver:1368): libxfce4ui-WARNING **: 14:27:16.699: org.freedesktop.ScreenSaver running but unused: using org.xfce.ScreenSaver instead
 
-(xfce4-session:1134): libxfce4ui-WARNING **: 14:19:07.746: org.freedesktop.ScreenSaver running but unused: using org.xfce.ScreenSaver instead
+(xfce4-session:1128): libxfce4ui-WARNING **: 14:27:17.118: org.freedesktop.ScreenSaver running but unused: using org.xfce.ScreenSaver instead
 
-(xfce4-power-manager:1342): libxfce4ui-WARNING **: 14:19:07.789: org.freedesktop.ScreenSaver running but unused: using org.xfce.ScreenSaver instead
-blueman-applet 14.19.09 WARNING  PluginManager:150 __load_plugin: Not loading PPPSupport because its conflict has higher priority
-blueman-applet 14.19.09 WARNING  PluginManager:150 __load_plugin: Not loading DhcpClient because its conflict has higher priority
-blueman-applet 14.19.09 WARNING  DiscvManager:122 update_menuitems: warning: Adapter is None
+(xfce4-power-manager:1335): libxfce4ui-WARNING **: 14:27:17.215: org.freedesktop.ScreenSaver running but unused: using org.xfce.ScreenSaver instead
+blueman-applet 14.27.19 WARNING  PluginManager:150 __load_plugin: Not loading PPPSupport because its conflict has higher priority
+blueman-applet 14.27.19 WARNING  PluginManager:150 __load_plugin: Not loading DhcpClient because its conflict has higher priority
+blueman-applet 14.27.19 WARNING  DiscvManager:122 update_menuitems: warning: Adapter is None
 virtual const QPalette* Qt6CTPlatformTheme::palette(QPlatformTheme::Palette) const QPlatformTheme::SystemPalette
 virtual const QPalette* Qt6CTPlatformTheme::palette(QPlatformTheme::Palette) const QPlatformTheme::ToolButtonPalette
 virtual const QPalette* Qt6CTPlatformTheme::palette(QPlatformTheme::Palette) const QPlatformTheme::ButtonPalette
@@ -85,4 +85,7 @@ virtual QVariant Qt6CTPlatformTheme::themeHint(QPlatformTheme::ThemeHint) const
 virtual const QPalette* Qt6CTPlatformTheme::palette(QPlatformTheme::Palette) const QPlatformTheme::SystemPalette
 virtual QVariant Qt6CTPlatformTheme::themeHint(QPlatformTheme::ThemeHint) const
 virtual const QPalette* Qt6CTPlatformTheme::palette(QPlatformTheme::Palette) const QPlatformTheme::SystemPalette
-virtual KPtyProcess::~KPtyProcess() the terminal process is still running, trying to stop it by SIGHUP
+
+(xfce4-screensaver-dialog:22137): libxfce4ui-WARNING **: 14:38:32.941: org.freedesktop.ScreenSaver running but unused: using org.xfce.ScreenSaver instead
+
+(xfce4-screensaver-dialog:82406): libxfce4ui-WARNING **: 15:10:45.765: org.freedesktop.ScreenSaver running but unused: using org.xfce.ScreenSaver instead
