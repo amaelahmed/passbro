@@ -1,0 +1,22 @@
+[CLIENT] 0x2800003
+  [CLIENT_LEADER] 0x2800001
+  [RES_NAME] xfce4-notifyd
+  [RES_CLASS] Xfce4-notifyd
+  [WM_NAME] xfce4-notifyd
+  [WM_COMMAND] (1) "xfce4-notifyd"
+  [GEOMETRY] (1328,52,576,113)
+  [GEOMETRY-MAXIMIZED] (1328,52,576,113)
+  [SCREEN] 0
+  [DESK] 0
+  [FLAGS] 0x8000
+[CLIENT] 0x4200007
+  [CLIENT_ID] 2b479d770-009e-4cef-ba80-b2b631193e10
+  [CLIENT_LEADER] 0x4200009
+  [RES_NAME] qterminal
+  [RES_CLASS] qterminal
+  [WM_NAME] root@kali: /home/kali
+  [GEOMETRY] (5,65,1910,839)
+  [GEOMETRY-MAXIMIZED] (5,65,1910,839)
+  [SCREEN] 0
+  [DESK] 0
+  [FLAGS] 0x10380

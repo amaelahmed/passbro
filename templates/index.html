@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background-color: #f4f4f4; transition: 0.3s; }
+        .dark-mode { background-color: #222; color: #fff; }
+        input, select { padding: 10px; width: 300px; font-size: 16px; }
+        .strength { margin-top: 10px; font-weight: bold; }
+        .weak { color: red; }
+        .medium { color: orange; }
+        .strong { color: green; }
+        .progress { width: 300px; height: 10px; background: #ddd; margin: 10px auto; border-radius: 5px; overflow: hidden; }
+        .progress-bar { height: 100%; width: 0%; border-radius: 5px; transition: width 0.3s ease-in-out; }
+        button { margin-top: 10px; padding: 10px; cursor: pointer; }
+        #history { margin-top: 20px; text-align: left; max-width: 300px; margin-left: auto; margin-right: auto; }
+        .disclaimer { background-color: #333; color: #fff; padding: 10px; font-size: 14px; font-weight: bold; margin-top: 20px; border-radius: 5px; }
+        footer { margin-top: 20px; font-size: 12px; }
+    </style>
+</head>
+<body>
+    
+    <h2>Check Your Password Strength</h2>
+    <input type="password" id="password" placeholder="Enter your password" oninput="checkStrength()">
+    <button onclick="togglePassword()">Show/Hide</button>
+    <p class="strength" id="strength-text">Strength: </p>
+    <div class="progress"><div class="progress-bar" id="progress-bar"></div></div>
+    <button onclick="generatePassword()">Generate Strong Password</button>
+    <input type="number" id="pass-length" min="8" max="32" value="12"> <label>Length</label>
+    <button onclick="copyPassword()">Copy Password</button>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <button onclick="checkBreachedPassword()">Check if Breached</button>
+    <p id="breach-result"></p>
+    <h3>Password History</h3>
+    <ul id="history"></ul>
+
+    <script>
+        let passwordHistory = [];
+
+        function checkStrength() {
+            let password = document.getElementById("password").value;
+            let strengthText = document.getElementById("strength-text");
+            let progressBar = document.getElementById("progress-bar");
+            let entropy = password.length * Math.log2(94);
+            let strength = "Weak";
+            let strengthClass = "weak";
+            let strengthValue = 20;
+
+            if (entropy > 80) {
+                strength = "Strong";
+                strengthClass = "strong";
+                strengthValue = 100;
+            } else if (entropy > 50) {
+                strength = "Medium";
+                strengthClass = "medium";
+                strengthValue = 60;
+            }
+
+            strengthText.textContent = `Strength: ${strength} (Entropy: ${Math.round(entropy)})`;
+            strengthText.className = "strength " + strengthClass;
+            progressBar.style.width = strengthValue + "%";
+            progressBar.style.background = strengthClass === "strong" ? "green" : (strengthClass === "medium" ? "orange" : "red");
+        }
+
+        function togglePassword() {
+            let passwordField = document.getElementById("password");
+            passwordField.type = passwordField.type === "password" ? "text" : "password";
+        }
+
+        function generatePassword() {
+            let chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()";
+            let length = document.getElementById("pass-length").value;
+            let password = "";
+            for (let i = 0; i < length; i++) {
+                password += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            document.getElementById("password").value = password;
+            savePassword(password);
+            checkStrength();
+        }
+
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+
+        function savePassword(password) {
+            if (passwordHistory.length >= 5) passwordHistory.shift();
+            passwordHistory.push(password);
+            let historyElement = document.getElementById("history");
+            historyElement.innerHTML = passwordHistory.map(pw => `<li>${pw}</li>`).join("");
+        }
+
+        async function checkBreachedPassword() {
+            let password = document.getElementById("password").value;
+            let breachResult = document.getElementById("breach-result");
+            
+            if (!password) {
+                breachResult.textContent = "Enter a password to check!";
+                breachResult.style.color = "red";
+                return;
+            }
+
+            let hash = await sha1(password);
+            let prefix = hash.substring(0, 5).toUpperCase();
+            let suffix = hash.substring(5).toUpperCase();
+            let response = await fetch(`https://api.pwnedpasswords.com/range/${prefix}`);
+            let data = await response.text();
+            let found = data.split("\n").some(line => line.startsWith(suffix));
+            
+            breachResult.textContent = found ? "This password has been breached!" : "This password is safe.";
+            breachResult.style.color = found ? "red" : "green";
+        }
+
+        async function sha1(str) {
+            const buffer = new TextEncoder().encode(str);
+            const hashBuffer = await crypto.subtle.digest("SHA-1", buffer);
+            const hashArray = Array.from(new Uint8Array(hashBuffer));
+            return hashArray.map(b => b.toString(16).padStart(2, "0")).join("");
+        }
+    </script>
+
+    <div class="disclaimer"> We do not store your passwords. This tool is for your own protection and security awareness.</div>
+    
+    <footer>
+        <p>Made by <span style="font-size: 10px;">Amal Ahammed</span></p>
+    </footer>
+</body>
+</html>

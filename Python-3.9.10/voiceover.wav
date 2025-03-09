@@ -1,0 +1,13 @@
+import pyttsx3
+
+# Initialize TTS engine
+engine = pyttsx3.init()
+
+# Script for voiceover (replace with your generated script)
+script = "Here's an interesting fact about money..."
+
+# Save voiceover to file
+engine.save_to_file(script, 'voiceover.wav')
+engine.runAndWait()
+
+print("Voiceover saved as 'voiceover.wav'")

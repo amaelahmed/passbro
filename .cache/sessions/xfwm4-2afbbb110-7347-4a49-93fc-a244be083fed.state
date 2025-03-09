@@ -1,0 +1,33 @@
+[CLIENT] 0x4e00007
+  [CLIENT_ID] 2505e4fee-3bd5-4d8e-9c24-67c67fe52fe9
+  [CLIENT_LEADER] 0x4e00009
+  [RES_NAME] qterminal
+  [RES_CLASS] qterminal
+  [WM_NAME] (venv)root@kali: /home/kali
+  [GEOMETRY] (5,65,1910,1011)
+  [GEOMETRY-MAXIMIZED] (5,65,1910,1010)
+  [SCREEN] 0
+  [DESK] 0
+  [FLAGS] 0x10000
+[CLIENT] 0x4400007
+  [CLIENT_ID] 2e693ce70-252c-42eb-9b3c-8ebc7f408f00
+  [CLIENT_LEADER] 0x4400009
+  [RES_NAME] qterminal
+  [RES_CLASS] qterminal
+  [WM_NAME] kali@kali: ~
+  [GEOMETRY] (5,65,1910,1010)
+  [GEOMETRY-MAXIMIZED] (5,65,1910,1010)
+  [SCREEN] 0
+  [DESK] 2
+  [FLAGS] 0x10300
+[CLIENT] 0x4800007
+  [CLIENT_ID] 27df88151-f7c2-40b3-bb56-9541183e87a2
+  [CLIENT_LEADER] 0x4800009
+  [RES_NAME] qterminal
+  [RES_CLASS] qterminal
+  [WM_NAME] (venv)root@kali: /home/kali
+  [GEOMETRY] (5,65,1910,1010)
+  [GEOMETRY-MAXIMIZED] (5,65,1910,840)
+  [SCREEN] 0
+  [DESK] 1
+  [FLAGS] 0x10300

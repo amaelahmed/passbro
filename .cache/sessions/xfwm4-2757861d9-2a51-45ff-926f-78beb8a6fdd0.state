@@ -1,0 +1,48 @@
+[CLIENT] 0x4000045
+  [CLIENT_ID] 21768612f-ef62-4e1b-9ca5-5e056d4f53d9
+  [CLIENT_LEADER] 0x4000001
+  [WINDOW_ROLE] browser
+  [RES_NAME] Navigator
+  [RES_CLASS] firefox-esr
+  [WM_NAME] http://127.0.0.1:9000. - Google Search — Mozilla Firefox
+  [WM_COMMAND] (1) "firefox-esr"
+  [GEOMETRY] (0,36,1920,873)
+  [GEOMETRY-MAXIMIZED] (-24,14,1328,922)
+  [SCREEN] 0
+  [DESK] 0
+  [FLAGS] 0x10300
+[CLIENT] 0x4400007
+  [CLIENT_ID] 2854dfc94-d20d-4d2e-a3a5-9ecf76d338a1
+  [CLIENT_LEADER] 0x4400009
+  [RES_NAME] qterminal
+  [RES_CLASS] qterminal
+  [WM_NAME] root@kali: /home/kali
+  [GEOMETRY] (5,65,1910,839)
+  [GEOMETRY-MAXIMIZED] (5,65,1910,839)
+  [SCREEN] 0
+  [DESK] 0
+  [FLAGS] 0x10300
+[CLIENT] 0x5800007
+  [CLIENT_ID] 2ffda5f31-4eb8-4f29-8835-1d58d0c8ccf0
+  [CLIENT_LEADER] 0x5800009
+  [RES_NAME] qterminal
+  [RES_CLASS] qterminal
+  [WM_NAME] root@kali: /home/kali
+  [GEOMETRY] (5,65,1910,839)
+  [GEOMETRY-MAXIMIZED] (5,65,1910,839)
+  [SCREEN] 0
+  [DESK] 1
+  [FLAGS] 0x10300
+[CLIENT] 0x1c01a92
+  [CLIENT_ID] 2dc850ff3-908d-45a1-9a62-b98ed6b68ba0
+  [CLIENT_LEADER] 0x1c00001
+  [WINDOW_ROLE] Thunar-1740907604-1503827391
+  [RES_NAME] Thunar
+  [RES_CLASS] Thunar
+  [WM_NAME] kali - Thunar
+  [WM_COMMAND] (1) "Thunar"
+  [GEOMETRY] (640,244,640,480)
+  [GEOMETRY-MAXIMIZED] (640,244,640,480)
+  [SCREEN] 0
+  [DESK] 0
+  [FLAGS] 0x10080

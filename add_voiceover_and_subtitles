@@ -1,0 +1,18 @@
+from moviepy.editor import VideoFileClip, AudioFileClip, TextClip, CompositeVideoClip
+
+def add_voiceover_and_subtitles():
+    # Load background video
+    video = VideoFileClip("background.mp4")
+    
+    # Load voiceover
+    audio = AudioFileClip("voiceover.mp3")
+    
+    # Add subtitles
+    txt_clip = TextClip("Weird Money Fact", fontsize=24, color='white')
+    txt_clip = txt_clip.set_pos('bottom').set_duration(video.duration)
+    
+    # Combine video, audio, and subtitles
+    final_video = CompositeVideoClip([video, txt_clip])
+    final_video = final_video.set_audio(audio)
+    
+    final_video.write_videofile("final_video.mp4", codec='libx264')

@@ -1,0 +1,15 @@
+import requests
+
+def download_video():
+    api_key = "YOUR_PEXELS_API_KEY"
+    query = "money"
+    url = f"https://api.pexels.com/videos/search?query={query}&per_page=1"
+    headers = {"Authorization": api_key}
+    
+    response = requests.get(url, headers=headers)
+    data = response.json()
+    
+    video_url = data["videos"][0]["video_files"][0]["link"]
+    video = requests.get(video_url)
+    with open("background.mp4", 'wb') as f:
+        f.write(video.content)

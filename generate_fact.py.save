@@ -1,0 +1,10 @@
+import google.generativeai as genai
+
+# Configure API Key
+genai.configure(api_key="AIzaSyD2CcwG19g3faTsp8VgQcJI3uZ65lp5roA")
+
+# Generate a fact
+prompt = "Tell me a weird money response = genai.chat(model="gemini-pro").send_message(prompt)
+
+print(response.text)  # Display the generated fact
+

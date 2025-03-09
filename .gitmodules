@@ -1,0 +1,3 @@
+[submodule "osint-email-lookup/sherlock"]
+	path = osint-email-lookup/sherlock
+	url = https://github.com/sherlock-project/sherlock.git

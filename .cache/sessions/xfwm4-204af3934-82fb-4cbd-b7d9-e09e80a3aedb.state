@@ -1,0 +1,11 @@
+[CLIENT] 0x4800003
+  [CLIENT_LEADER] 0x4800001
+  [RES_NAME] xfce4-notifyd
+  [RES_CLASS] Xfce4-notifyd
+  [WM_NAME] xfce4-notifyd
+  [WM_COMMAND] (1) "xfce4-notifyd"
+  [GEOMETRY] (1218,52,686,128)
+  [GEOMETRY-MAXIMIZED] (1218,52,686,128)
+  [SCREEN] 0
+  [DESK] 0
+  [FLAGS] 0x8000

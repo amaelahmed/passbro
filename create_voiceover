@@ -1,0 +1,6 @@
+from gtts import gTTS
+
+def create_voiceover(fact):
+    tts = gTTS(fact)
+    tts.save("voiceover.mp3")
+

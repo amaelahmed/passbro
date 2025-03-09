@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/kali/zphisher/CamPhish/cam23Feb2025182717.png" added="2025-02-23T18:28:00.980012Z" modified="2025-02-23T18:28:00.980018Z" visited="2025-02-23T18:28:00.980013Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="ristretto" exec="&apos;ristretto %u&apos;" modified="2025-02-23T18:28:00.980015Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kali/notes/note" added="2025-03-03T09:10:37.288400Z" modified="2025-03-08T19:28:15.466385Z" visited="2025-03-03T09:10:37.288401Z">
+    <desc>Language: ; Encoding: UTF-8; Cursor: 0:0;</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2025-03-08T19:28:15.466382Z" count="24"/>
+          <bookmark:application name="Thunar" exec="&apos;Thunar %u&apos;" modified="2025-03-08T16:16:13.540678Z" count="6"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///usr/bin/windscribe" added="2025-03-05T19:24:47.318841Z" modified="2025-03-05T19:24:49.411570Z" visited="2025-03-05T19:24:47.318842Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;Thunar %u&apos;" modified="2025-03-05T19:24:49.411568Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kali/voiceover.mp3" added="2025-03-08T17:08:11.281339Z" modified="2025-03-08T17:08:11.281345Z" visited="2025-03-08T17:08:11.281340Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;Thunar %u&apos;" modified="2025-03-08T17:08:11.281342Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kali/money_fact.mp3" added="2025-03-08T17:08:23.819330Z" modified="2025-03-08T17:08:23.819334Z" visited="2025-03-08T17:08:23.819331Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;Thunar %u&apos;" modified="2025-03-08T17:08:23.819332Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kali/audio.mp3" added="2025-03-08T17:08:38.606107Z" modified="2025-03-08T17:08:57.724840Z" visited="2025-03-08T17:08:38.606108Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;Thunar %u&apos;" modified="2025-03-08T17:08:57.724836Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kali/output_1741449671.mp4" added="2025-03-08T17:09:57.283554Z" modified="2025-03-08T17:09:57.283565Z" visited="2025-03-08T17:09:57.283556Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;Thunar %u&apos;" modified="2025-03-08T17:09:57.283559Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kali/output_1741449704.mp4" added="2025-03-08T17:10:11.352403Z" modified="2025-03-08T17:10:11.352408Z" visited="2025-03-08T17:10:11.352404Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;Thunar %u&apos;" modified="2025-03-08T17:10:11.352405Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/kali/test_video.mp4" added="2025-03-08T17:10:20.693205Z" modified="2025-03-08T17:10:20.693215Z" visited="2025-03-08T17:10:20.693207Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;Thunar %u&apos;" modified="2025-03-08T17:10:20.693210Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

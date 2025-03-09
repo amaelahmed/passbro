@@ -1,0 +1,33 @@
+[CLIENT] 0x4800007
+  [CLIENT_ID] 21c81b9cc-2f15-4ab7-b50d-334dd4543cdf
+  [CLIENT_LEADER] 0x4800009
+  [RES_NAME] qterminal
+  [RES_CLASS] qterminal
+  [WM_NAME] (myenv)root@kali: /home/setoolkit/SocialMediaHackingToolkit
+  [GEOMETRY] (5,65,1910,839)
+  [GEOMETRY-MAXIMIZED] (5,65,1910,839)
+  [SCREEN] 0
+  [DESK] 1
+  [FLAGS] 0x10300
+[CLIENT] 0x4200007
+  [CLIENT_ID] 2df9f7a16-174d-4b3d-9dcd-2c206288caf3
+  [CLIENT_LEADER] 0x4200009
+  [RES_NAME] qterminal
+  [RES_CLASS] qterminal
+  [WM_NAME] (myenv)root@kali: /home/kali/santet-online/santet-online
+  [GEOMETRY] (5,65,1910,839)
+  [GEOMETRY-MAXIMIZED] (5,65,1910,839)
+  [SCREEN] 0
+  [DESK] 0
+  [FLAGS] 0x10000
+[CLIENT] 0x4e00268
+  [CLIENT_LEADER] 0x4e00001
+  [RES_NAME] xfce4-notifyd
+  [RES_CLASS] Xfce4-notifyd
+  [WM_NAME] xfce4-notifyd
+  [WM_COMMAND] (1) "xfce4-notifyd"
+  [GEOMETRY] (1338,52,566,108)
+  [GEOMETRY-MAXIMIZED] (1338,52,566,108)
+  [SCREEN] 0
+  [DESK] 1
+  [FLAGS] 0x8000
